@@ -1,12 +1,11 @@
 using Revise
 using MAT
 
-include("signal_process.jl")
-include("casorati.jl")
-include("spatiotemporal_filter.jl")
-include("spatial_singularity.jl")
-include("visualize.jl")
-
+include("./scripts/signal_process.jl")
+include("./scripts/casorati.jl")
+include("./scripts/spatiotemporal_filter.jl")
+include("./scripts/spatial_singularity.jl")
+include("./scripts/visualize.jl")
 
 # Read file
 matfile = matread("./bfRFC.mat");
