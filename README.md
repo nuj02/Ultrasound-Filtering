@@ -18,14 +18,10 @@ While this filtering can be conducted through trial and error in selection of th
 
 By calculating the correlation between the absolute value of the spatial singular vectors, an interesting correlation matrix can be generated. 
 
-| ![Spatial Similarity Matrix](./Figures/3%20Spatial%20Similarity/small/ssm.png)
-|:--:|
-| **Figure 6**: Spatial similarity matrix, the correlation between the singular spatial vectors |
+| ![Spatial Similarity Matrix](./Figures/3%20Spatial%20Similarity/small/ssm.png) | ![Reconstruction with 25:60 Singular Values](./Figures/4%20Singular%20Value%20Selection/small/25-60.gif)
+|:--:|:--:|
+| **Figure 6**: Spatial similarity matrix, the correlation between the singular spatial vectors | **Figure 7**: Reconstruction with 25:60 singular values 
 
 As my data is noisy, a less than ideal correlation matrix is generated. However, three squares should become evident in the correlation matrix. The top left square should correspond to the tissue subspace, where the singular spatial vectors corresponding to tissue have a high correlation. The middle square should correspond to the vascular subspace, where the singular spatial vectors corresponding to vascular have a high correlation. And the bottom right square should correspond to the noise subspace, where the singular spatial vectors corresponding to noise have a high correlation. 
 
 Adaptive filtering can be conducted through this methodology, but data acquired in a refined matter is required to proceed.
-
-| ![Reconstruction with 25:60 Singular Values](./Figures/4%20Singular%20Value%20Selection/small/25-60.gif)
-|:--:|
-| **Figure 7**: Reconstruction with 25:60 singular values |
